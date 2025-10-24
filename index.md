@@ -1,8 +1,10 @@
 Shubham Deepak Lonkar
 
-MS in Computer Engineering — RTL Design, CPU Microarchitecture, FPGA Logic
+MS in Computer Engineering — RTL Design, CPU Microarchitecture
 
-Email - LinkedIn - GitHub - Resume (PDF)
+Email: slonkar@asu.edu
+LinkedIn: https://www.linkedin.com/in/shubhamlonkar/
+GitHub: https://shubham-lonkar.github.io/
 Highlights
 
     31% higher cache hit rate with compressed multi-level cache RTL; validated with Intel Pin traces.
