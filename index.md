@@ -1,105 +1,65 @@
-Your Name
+Shubham Deepak Lonkar
 
-RTL Design Engineer
+MS in Computer Engineering — RTL Design, CPU Microarchitecture, FPGA Logic
 
-Email: your@email - GitHub: github.com/your-username - LinkedIn: linkedin.com/in/your-handle
+Email - LinkedIn - GitHub - Resume (PDF)
+Highlights
 
-​
-Education
+    31% higher cache hit rate with compressed multi-level cache RTL; validated with Intel Pin traces.
 
-Arizona State University — MS, Computer Engineering — Aug 2024 – May 2026
+    Achieved ~800 MHz on Intel Stratix‑10 MX/NX; improved DSP datapath and DMA throughput by ~20%.
 
-    Coursework: Computer Architecture; Advanced Digital Design and Verification; Algo/HW Co‑design/Design Automation for AI Hardware
+    Integrated 2‑bit, gselect, and gshare predictors in 5‑stage RISC‑V; ~17% performance uplift.
 
-    ​
+View Projects
+Featured Projects
 
-Bharati Vidyapeeth University — BTech, Electronics and Telecomm Engineering — Jun 2018 – Aug 2022
+    Multi‑Level Cache with Compression in RTL and Software — compressed hierarchy, evaluation scripts, validation with traces.
 
-    Coursework: Microprocessors and Microcontrollers; VLSI Design; Digital Circuits
+    Branch Predictors in RISC‑V — integration, misprediction recovery, performance results.
 
-    ​
+    32‑bit MIPS Processor — pipeline control, multi‑cycle ops, coverage, synthesis.
 
-Professional Experience
+    DSP Extensions on FPGA — FP support, 20 custom vector instructions, timing closure work.
 
-Arizona State University — Graduate Student Researcher — Aug 2025 – Present
+Experience
 
-    Researched on‑the‑fly cache compression in modern architectures to improve hit rate; implemented methodology on a RISC‑V CPU in Verilog
+Arizona State University — Graduate Student Researcher
 
-​
+    On‑the‑fly cache compression on a RISC‑V CPU (Verilog); profiled SQLite3, STREAM, and ML workloads using Intel Pin.
 
-Profiled memory access patterns for SQLite3, STREAM, and ML workloads (DBSCAN, CNN, PCA, KMeans) using the Intel Pin instrumentation tool
+    Built methodology to analyze memory access patterns for compression and cache behavior.
 
-    ​
+Manjeera Digital Systems — RTL Design Engineer Trainee
 
-Manjeera Digital Systems — RTL Design Engineer Trainee — Oct 2022 – Mar 2024
+    Implemented FP support and 20 custom vector instructions for a DSP; prototyped on Intel PAC D5005.
 
-    Implemented floating‑point support and 20 custom vector instructions for a DSP; prototyped and tested on Intel PAC D5005 for space applications
-
-​
-
-Improved microarchitecture for FP operations and automated simulation with Tcl scripts
-
-​
-
-Achieved ~14% higher clock speed (~800 MHz) on Intel Stratix‑10 MX/NX FPGAs; collaborated with verification to validate datapath and basic STA timing closure
-
-​
-
-Enhanced DMA IP to better support the DSP design, yielding ~20% higher data transfer speed
-
-    ​
+    Achieved ~14% higher clock (~800 MHz) on Stratix‑10 MX/NX; improved DMA throughput by ~20%; automated flows with Tcl.
 
 Skills
 
-Programming/HDLs/Scripting: Python, C, Verilog, SystemVerilog
-​
-EDA/ASIC Tools: Intel Pin, Quartus, ModelSim, AMD Vivado, Linux, Synopsys DC, Verdi, Gem5​
-Technology: Intel Stratix‑10 MX/NX/SX, Arria‑10 GX, Terasic DE10‑Lite, AMD Zynq‑7000
+    HDLs/Languages: Verilog, SystemVerilog, C, Python
 
-​
-Academic Projects
+    EDA/Tools: Quartus, ModelSim, Vivado, Synopsys DC, Verdi, Gem5, Intel Pin, Linux
 
-Multi‑level Cache Design in Software and RTL — Sep 2025 – Present
+    Platforms: Intel Stratix‑10 MX/NX/SX, Arria‑10 GX, Terasic DE10‑Lite, AMD Zynq‑7000
 
-    Built Python models for direct‑mapped, set‑associative, and fully associative caches to evaluate compression algorithms across configurations
+Education
 
-​
+Arizona State University — MS, Computer Engineering (Aug 2024 – May 2026)
+Coursework: Computer Architecture; Advanced Digital Design and Verification; Algo/HW Co‑design/Design Automation for AI Hardware
 
-Designed a multi‑level cache hierarchy in RTL with compression logic; achieved >31% higher hit rate than traditional baselines; validated with Intel Pin access patterns
+Bharati Vidyapeeth University — BTech, Electronics & Telecomm (Jun 2018 – Aug 2022)
+Coursework: Microprocessors and Microcontrollers; VLSI Design; Digital Circuits
+Writing
 
-    ​
+    Cache compression trade‑offs for L2/L3: BDI vs FPC.
 
-Profiling ML Models on CPU and GPU — Aug 2025
+    Branch predictor design notes: gshare vs gselect integration.
 
-    Implemented VGG‑8, LeNet‑5, and AlexNet‑5 in Python; used Google Colab with NVIDIA T4 GPU
+    Notes on timing closure for FP datapaths on Stratix‑10.
 
-​
+Contact
 
-Profiled inference latency vs batch size and performed roofline analysis on CPU and GPU; improved training and test accuracy using trainability and expressivity methods (+12% and +7%)
-
-    ​
-
-Branch Predictors in RISC‑V — Jul 2025
-
-    Integrated 2‑bit, gselect, and gshare branch predictors in a 5‑stage RISC‑V CPU; fixed control‑flow updates for predicted and actual targets
-
-​
-
-Wrote simulation tests and measured ~17% average performance improvement
-
-    ​
-
-32‑bit MIPS Processor Design and Verification — May 2025
-
-    Implemented a 5‑stage MIPS with stall, flush, and hazard units; added a multi‑cycle instruction and resolved pipeline hazards in ModelSim
-
-​
-
-Built a constrained‑random instruction generator and achieved ~80% functional coverage; synthesized with Synopsys DC
-
-    ​
-
-About
-
-Interested in RTL design roles focused on caches, memory systems, and CPU microarchitecture; open to opportunities in ASIC/FPGA design and verification.
-​
+Email - LinkedIn - GitHub
+Open to full‑time roles in RTL Design, CPU Microarchitecture, and FPGA Logic.
