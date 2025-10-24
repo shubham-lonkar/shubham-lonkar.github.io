@@ -1,7 +1,4 @@
---- title: "Shubham Deepak Lonkar — RTL and CPU Microarchitecture"
-layout: default
-permalink: /
-Shubham Deepak Lonkar
+#H1 Shubham Deepak Lonkar
 
 MS in Computer Engineering — RTL Design, CPU Microarchitecture
 
