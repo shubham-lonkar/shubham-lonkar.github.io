@@ -1,6 +1,27 @@
-theme: jekyll-theme-slate
 title: "Shubham Deepak Lonkar"
-description: "RTL design, CPU microarchitecture"
+description: "RTL Design - CPU Microarchitecture - FPGA Logic"
+theme: jekyll-theme-slate
 logo: /assets/profile.png
 show_downloads: false
-google_analytics:
+navigation:
+
+    title: Home
+    url: /
+
+    title: Projects
+    url: /projects/
+
+    title: Experience
+    url: /#experience
+
+    title: Skills
+    url: /#skills
+
+    title: Education
+    url: /#education
+
+    title: Writing
+    url: /#writing
+
+    title: Contact
+    url: /#contact
