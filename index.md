@@ -1,13 +1,19 @@
+--- title: "Shubham Deepak Lonkar — RTL and CPU Microarchitecture"
+layout: default
+permalink: /
 Shubham Deepak Lonkar
 
 MS in Computer Engineering — RTL Design, CPU Microarchitecture
 
-Email: slonkar@asu.edu
-LinkedIn: https://www.linkedin.com/in/shubhamlonkar/
-GitHub: https://shubham-lonkar.github.io/
+    Email: slonkar@asu.edu
+
+    LinkedIn: https://www.linkedin.com/in/shubhamlonkar/
+
+    GitHub: https://shubham-lonkar.github.io/
+
 Highlights
 
-    31% higher cache hit rate with compressed multi-level cache RTL; validated with Intel Pin traces.
+    31% higher cache hit rate with compressed multi‑level cache RTL; validated with Intel Pin traces.
 
     Achieved ~800 MHz on Intel Stratix‑10 MX/NX; improved DSP datapath and DMA throughput by ~20%.
 
@@ -25,7 +31,6 @@ Featured Projects
     DSP Extensions on FPGA — FP support, 20 custom vector instructions, timing closure work.
 
 Experience
-
 Arizona State University — Graduate Student Researcher
 
     On‑the‑fly cache compression on a RISC‑V CPU (Verilog); profiled SQLite3, STREAM, and ML workloads using Intel Pin.
@@ -47,11 +52,11 @@ Skills
     Platforms: Intel Stratix‑10 MX/NX/SX, Arria‑10 GX, Terasic DE10‑Lite, AMD Zynq‑7000
 
 Education
-
 Arizona State University — MS, Computer Engineering (Aug 2024 – May 2026)
-Coursework: Computer Architecture; Advanced Digital Design and Verification; Algo/HW Co‑design/Design Automation for AI Hardware
 
+Coursework: Computer Architecture; Advanced Digital Design and Verification; Algo/HW Co‑design/Design Automation for AI Hardware
 Bharati Vidyapeeth University — BTech, Electronics & Telecomm (Jun 2018 – Aug 2022)
+
 Coursework: Microprocessors and Microcontrollers; VLSI Design; Digital Circuits
 Writing
 
@@ -63,5 +68,10 @@ Writing
 
 Contact
 
-Email - LinkedIn - GitHub
+    Email: slonkar@asu.edu
+
+    LinkedIn: https://www.linkedin.com/in/shubhamlonkar/
+---
+    GitHub: https://shubham-lonkar.github.io/
+
 Open to full‑time roles in RTL Design, CPU Microarchitecture, and FPGA Logic.
