@@ -7,6 +7,7 @@ MS in Computer Engineering — RTL Design, CPU Microarchitecture
     LinkedIn: https://www.linkedin.com/in/shubhamlonkar/
 
     GitHub: https://shubham-lonkar.github.io/
+---
 
 Highlights
 
@@ -15,6 +16,8 @@ Highlights
     Achieved ~800 MHz on Intel Stratix‑10 MX/NX; improved DSP datapath and DMA throughput by ~20%.
 
     Integrated 2‑bit, gselect, and gshare predictors in 5‑stage RISC‑V; ~17% performance uplift.
+
+---
 
 View Projects
 Featured Projects
