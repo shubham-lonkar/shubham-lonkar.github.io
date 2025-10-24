@@ -7,6 +7,7 @@ MS in Computer Engineering — RTL Design, CPU Microarchitecture
     LinkedIn: https://www.linkedin.com/in/shubhamlonkar/
 
     GitHub: https://shubham-lonkar.github.io/
+
 ---
 
 Highlights
