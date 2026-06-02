@@ -1,27 +1,17 @@
-title: "Shubham Deepak Lonkar"
-description: "RTL Design - CPU Microarchitecture"
+title: "Shubham Lonkar"
+description: "RTL Design Engineer | CPU Microarchitecture | FPGA"
 theme: jekyll-theme-slate
-logo: /assets/profile.png
 show_downloads: false
 navigation:
-
-    title: Home
+  - title: Home
     url: /
-
-    title: Projects
-    url: /projects/
-
-    title: Experience
+  - title: Projects
+    url: /#projects
+  - title: Experience
     url: /#experience
-
-    title: Skills
+  - title: Skills
     url: /#skills
-
-    title: Education
+  - title: Education
     url: /#education
-
-    title: Writing
-    url: /#writing
-
-    title: Contact
+  - title: Contact
     url: /#contact
