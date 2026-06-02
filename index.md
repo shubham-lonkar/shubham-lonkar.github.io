@@ -10,7 +10,6 @@ title: Shubham Lonkar
       <span>Shubham Lonkar</span>
     </a>
     <div class="nav-links">
-      <a href="#themes">Themes</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
@@ -69,57 +68,9 @@ title: Shubham Lonkar
     </article>
   </section>
 
-  <section class="section theme-lab" id="themes">
-    <div class="section-heading">
-      <p class="eyebrow">Theme options</p>
-      <h2>Design directions I can take this site in.</h2>
-      <p>
-        I added these as live preview options for now. The current default is tuned for hardware, RTL, and microarchitecture work.
-      </p>
-    </div>
-    <div class="theme-grid" role="group" aria-label="Theme previews">
-      <button class="theme-card is-active" type="button" data-theme-button="signal" aria-pressed="true">
-        <span class="theme-swatches">
-          <i style="--swatch:#081012"></i><i style="--swatch:#23c6a8"></i><i style="--swatch:#f5b451"></i>
-        </span>
-        <strong>Signal Slate</strong>
-        <span>Dark hardware lab, cyan signal traces, amber measurement accents.</span>
-      </button>
-      <button class="theme-card" type="button" data-theme-button="silicon" aria-pressed="false">
-        <span class="theme-swatches">
-          <i style="--swatch:#f7faf8"></i><i style="--swatch:#245bff"></i><i style="--swatch:#10a875"></i>
-        </span>
-        <strong>Silicon Light</strong>
-        <span>Recruiter-friendly white space, clean blue structure, precise technical contrast.</span>
-      </button>
-      <button class="theme-card" type="button" data-theme-button="foundry" aria-pressed="false">
-        <span class="theme-swatches">
-          <i style="--swatch:#11100d"></i><i style="--swatch:#d59b2a"></i><i style="--swatch:#6ec6ff"></i>
-        </span>
-        <strong>Foundry Dark</strong>
-        <span>High-contrast silicon foundry mood with gold, steel, and oscilloscope blue.</span>
-      </button>
-      <button class="theme-card" type="button" data-theme-button="lab" aria-pressed="false">
-        <span class="theme-swatches">
-          <i style="--swatch:#f5f7fb"></i><i style="--swatch:#101827"></i><i style="--swatch:#ff6b4a"></i>
-        </span>
-        <strong>Clean Lab</strong>
-        <span>Dense resume layout, crisp dividers, orange callouts for measured impact.</span>
-      </button>
-      <button class="theme-card" type="button" data-theme-button="editorial" aria-pressed="false">
-        <span class="theme-swatches">
-          <i style="--swatch:#10151f"></i><i style="--swatch:#e8e2d8"></i><i style="--swatch:#7dd3fc"></i>
-        </span>
-        <strong>Editorial Grid</strong>
-        <span>Magazine-style portfolio pacing with stronger narrative sections.</span>
-      </button>
-    </div>
-  </section>
-
   <section class="section split-section" id="about">
     <div class="section-heading">
       <p class="eyebrow">Summary</p>
-      <h2>RTL engineer with silicon-minded execution and research depth.</h2>
     </div>
     <div class="split-copy">
       <p>
@@ -142,7 +93,6 @@ title: Shubham Lonkar
   <section class="section" id="experience">
     <div class="section-heading">
       <p class="eyebrow">Experience</p>
-      <h2>Hardware roles, research, grading, and FPGA implementation.</h2>
     </div>
     <div class="timeline">
       <article class="timeline-item">
@@ -160,6 +110,7 @@ title: Shubham Lonkar
             <li>Designed a PPA-aware hybrid cache-compression framework with 1.2x to 1.6x effective cache-capacity improvement without physically increasing SRAM size.</li>
             <li>Implemented per-line FPC, BDI, FVC, and ZCA selection with metadata tracking and latency-aware decompression, reaching a 10% cache-miss reduction on ML workloads in simulation.</li>
             <li>Extended software-validated compression findings into RTL compression logic integrated into a baseline RISC-V CPU, improving effective cache utilization by 1.2x to 1.8x over uncompressed configurations.</li>
+            <li><strong>Tools:</strong> Verilog, Python, Intel Pin, RISC-V, cache simulation, ML workload traces.</li>
           </ul>
         </div>
       </article>
@@ -176,6 +127,7 @@ title: Shubham Lonkar
             <li>Evaluated code submissions and project reports for 80+ students across graduate courses.</li>
             <li>Formalized project rubrics from scratch for Computer Architecture and Hardware Security &amp; Trust.</li>
             <li>Conducted office hours alongside TAs, connecting lecture concepts with hands-on project work.</li>
+            <li><strong>Tools:</strong> Computer architecture projects, hardware security labs, grading rubrics, office hours.</li>
           </ul>
         </div>
       </article>
@@ -196,6 +148,7 @@ title: Shubham Lonkar
             <li>Improved SoC Fmax by 14% from 640 MHz to 800 MHz and reduced dynamic power by 23% through pipeline rebalancing, clock gating, and operand isolation.</li>
             <li>Resolved CDC hazards across a 3-clock-domain SoC subsystem using synchronizers, handshake protocols, and CDC-safe FIFOs.</li>
             <li>Automated IP-level simulation regression flows with Tcl scripts, cutting manual simulation effort by 80%.</li>
+            <li><strong>Tools:</strong> Verilog, SystemVerilog, Intel Quartus Prime, Quartus Power Analyzer, Tcl, CDC analysis, static timing analysis.</li>
           </ul>
         </div>
       </article>
@@ -213,6 +166,7 @@ title: Shubham Lonkar
             <li>Extended the DMA with a new burst mode built from scratch and integrated the complete block into the lab design.</li>
             <li>Built directed testbenches for AXI handshakes, FSM transitions, register accesses, and error-handling paths using waveform-based debug.</li>
             <li>Reviewed Vivado synthesis, timing, utilization, and power reports to evaluate PPA trade-offs and FPGA constraints.</li>
+            <li><strong>Tools:</strong> Verilog, Vivado, AXI, FSM design, directed testbenches, waveform debug.</li>
           </ul>
         </div>
       </article>
@@ -222,7 +176,6 @@ title: Shubham Lonkar
   <section class="section" id="projects">
     <div class="section-heading">
       <p class="eyebrow">Projects</p>
-      <h2>Selected RTL, microarchitecture, verification, and FPGA builds.</h2>
     </div>
     <div class="project-grid">
       <article class="project-card">
@@ -322,7 +275,6 @@ title: Shubham Lonkar
   <section class="section split-section" id="skills">
     <div class="section-heading">
       <p class="eyebrow">Skills</p>
-      <h2>Tools and design areas from the resume and profile.</h2>
     </div>
     <div class="skill-columns">
       <article>
@@ -338,7 +290,7 @@ title: Shubham Lonkar
         <p>Pipelined design, branch prediction, cache modeling, memory hierarchy, floating-point datapaths, APB, AHB, AXI, IP integration, clock gating, low-power RTL, CDC synchronizers, handshake logic, logic synthesis, STA concepts, FPGA prototyping, finite state machines, static timing analysis.</p>
       </article>
       <article>
-        <h3>Platforms</h3>
+        <h3>FPGAs</h3>
         <p>Intel Stratix-10 MX/NX/SX, Arria-10 GX, Terasic DE10-Lite, AMD Zynq-7000, Intel PAC D5005.</p>
       </article>
     </div>
@@ -348,7 +300,6 @@ title: Shubham Lonkar
     <div>
       <div class="section-heading compact">
         <p class="eyebrow">Education</p>
-        <h2>Computer engineering foundation.</h2>
       </div>
       <div class="info-list">
         <article>
@@ -367,7 +318,6 @@ title: Shubham Lonkar
     <div>
       <div class="section-heading compact">
         <p class="eyebrow">Certifications</p>
-        <h2>FPGA and digital design training.</h2>
       </div>
       <div class="info-list">
         <article>
@@ -386,44 +336,15 @@ title: Shubham Lonkar
     </div>
   </section>
 
-  <section class="section" id="writing">
-    <div class="section-heading">
-      <p class="eyebrow">Writing and notes</p>
-      <h2>Topics that can become short technical posts.</h2>
-    </div>
-    <div class="note-grid">
-      <article>
-        <h3>Cache compression trade-offs</h3>
-        <p>BDI vs FPC vs FVC vs ZCA for L2/L3 behavior, ML workloads, compression metadata, and decompression latency.</p>
-      </article>
-      <article>
-        <h3>Branch predictor design notes</h3>
-        <p>GShare vs GSelect integration, RISC-V recovery paths, and CPI measurements across classic benchmarks.</p>
-      </article>
-      <article>
-        <h3>Timing closure for FP datapaths</h3>
-        <p>Pipeline rebalancing, operand isolation, clock gating, and post-synthesis frequency closure.</p>
-      </article>
-      <article>
-        <h3>Hardware security lab notes</h3>
-        <p>UART netlist reverse engineering, Trojan triggers, side-channel framing, and register-file leakage payloads.</p>
-      </article>
-    </div>
-  </section>
-
   <section class="contact-section" id="contact">
     <div>
       <p class="eyebrow">Contact</p>
-      <h2>Open to full-time roles in RTL design, CPU microarchitecture, FPGA logic, and AI accelerator hardware.</h2>
     </div>
     <div class="contact-actions">
       <a class="button primary" href="mailto:slonkar@asu.edu">slonkar@asu.edu</a>
       <a class="button" href="mailto:shubhamlonkar0912@gmail.com">shubhamlonkar0912@gmail.com</a>
-      <a class="button" href="tel:+16025773719">(602) 577-3719</a>
       <a class="button" href="https://www.linkedin.com/in/shubhamlonkar/">linkedin.com/in/shubhamlonkar</a>
       <a class="button" href="https://shubham-lonkar.github.io/">GitHub Pages</a>
     </div>
   </section>
 </div>
-
-<script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
