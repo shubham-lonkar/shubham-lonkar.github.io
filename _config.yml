@@ -6,12 +6,8 @@ navigation:
   - title: Home
     url: /
   - title: Projects
-    url: /#projects
+    url: /projects/
   - title: Experience
-    url: /#experience
+    url: /experience/
   - title: Skills
-    url: /#skills
-  - title: Education
-    url: /#education
-  - title: Contact
-    url: /#contact
+    url: /skills/

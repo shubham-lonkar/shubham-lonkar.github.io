@@ -1,17 +1,18 @@
 ---
 layout: default
-title: Projects
+title: Projects — Shubham Lonkar
 ---
 
 <div class="project-shell">
-  <nav class="portfolio-nav" aria-label="Projects navigation">
+  <nav class="portfolio-nav" aria-label="Primary navigation">
     <a class="brand-mark" href="{{ '/' | relative_url }}">
       <span class="brand-chip">SL</span>
       <span>Shubham Lonkar</span>
     </a>
     <div class="nav-links">
-      <a href="{{ '/' | relative_url }}#projects">Home projects</a>
-      <a href="{{ '/' | relative_url }}#experience">Experience</a>
+      <a href="{{ '/projects/' | relative_url }}" class="nav-active">Projects</a>
+      <a href="{{ '/experience/' | relative_url }}">Experience</a>
+      <a href="{{ '/skills/' | relative_url }}">Skills</a>
       <a href="{{ '/' | relative_url }}#contact">Contact</a>
     </div>
   </nav>
@@ -20,7 +21,8 @@ title: Projects
     <p class="eyebrow">Project index</p>
     <h1>RTL, microarchitecture, FPGA, and hardware security work.</h1>
     <p>
-      This page keeps the long-form project inventory in one place while the landing page can stay more selective later.
+      Research, course, and industry projects spanning cache compression, floating-point arithmetic, branch prediction,
+      hardware security, and SoC IP design.
     </p>
   </section>
 
@@ -28,48 +30,95 @@ title: Projects
     <div class="project-grid">
       <article class="project-card">
         <span class="project-kicker">Research | Verilog | Python | Intel Pin</span>
-        <h2>Runtime-Adaptive Cache Compression</h2>
-        <p>RISC-V cache-compression research using FPC, BDI, FVC, and ZCA selection, metadata tracking, and latency-aware decompression for ML workloads.</p>
+        <h3>Runtime-Adaptive Cache Compression</h3>
+        <p>Hybrid cache-compression framework for RISC-V and ML workloads using FPC, BDI, FVC, and ZCA selection with metadata tracking and latency-aware decompression.</p>
+        <ul>
+          <li>1.2x to 1.8x effective cache utilization improvement across research iterations.</li>
+          <li>10% cache-miss reduction in ML workload simulation.</li>
+          <li>Workloads: CNN, K-means, DBSCAN, PCA, SQLite3, and STREAM.</li>
+        </ul>
       </article>
+
       <article class="project-card">
         <span class="project-kicker">SystemVerilog | APB | Synopsys DC</span>
-        <h2>FP8 Systolic Matrix Multiplier</h2>
-        <p>Custom FP8 E3M4 arithmetic integrated into a 4x4 systolic array, synthesized to a 45 nm target with a 500 MHz post-synthesis goal.</p>
+        <h3>FP8 Systolic Matrix Multiplier</h3>
+        <p>Custom FP8 E3M4 adder and multiplier integrated into a 4x4 systolic array for ML inference acceleration.</p>
+        <ul>
+          <li>Replaced integer MACs and added a 16-bit APB CSR control/status interface.</li>
+          <li>Synthesized against a 45 nm standard-cell library.</li>
+          <li>Met 500 MHz post-synthesis target and reduced dynamic power by about 55%.</li>
+        </ul>
       </article>
+
       <article class="project-card">
         <span class="project-kicker">SystemVerilog | ModelSim | RISC-V</span>
-        <h2>Branch Predictors in RISC-V</h2>
-        <p>GShare and GSelect branch predictors evaluated across five benchmark configurations with about 17% average CPI improvement.</p>
+        <h3>Branch Predictors in RISC-V</h3>
+        <p>Implemented GShare and GSelect branch predictors in a RISC-V CPU and evaluated five configurations across GCD, Fibonacci, factorial, Mandelbrot, and Hanoi benchmarks.</p>
+        <ul>
+          <li>Measured roughly 17% average CPI improvement.</li>
+          <li>Covered predictor integration, misprediction recovery, and performance comparison.</li>
+        </ul>
       </article>
+
       <article class="project-card">
-        <span class="project-kicker">Verilog | Yosys | Quartus</span>
-        <h2>Hardware Trojan Detection</h2>
-        <p>Reverse-engineered obfuscated UART netlists and implemented a register-file leakage Trojan in a 7-stage RISC-V processor.</p>
+        <span class="project-kicker">Verilog | ModelSim | Yosys | Quartus Prime</span>
+        <h3>Hardware Trojan Detection &amp; Implementation</h3>
+        <p>Reverse-engineered four obfuscated memory-mapped UART netlists using simulation, waveform debug, and Yosys netlist visualization.</p>
+        <ul>
+          <li>Identified trigger conditions, payload behavior, and deviations from a golden design.</li>
+          <li>Implemented a register-file leakage Trojan in a 7-stage RISC-V processor.</li>
+          <li>Evaluated area and timing overhead.</li>
+        </ul>
       </article>
+
       <article class="project-card">
-        <span class="project-kicker">Verilog | Quartus | FPGA</span>
-        <h2>Physical Unclonable Functions</h2>
-        <p>Parameterized Arbiter and Ring Oscillator PUFs with Hamming Distance analysis and Tcl-based placement constraints.</p>
+        <span class="project-kicker">Verilog | ModelSim | Quartus Prime</span>
+        <h3>Physical Unclonable Function Design</h3>
+        <p>Implemented parameterized Arbiter and Ring Oscillator PUFs using delay-modeled RTL and FPGA evaluation.</p>
+        <ul>
+          <li>Verified uniqueness and reliability via Hamming Distance analysis across harvested CRPs.</li>
+          <li>Used Tcl-based LAB-cell placement constraints to isolate process variation from routing differences.</li>
+        </ul>
       </article>
+
       <article class="project-card">
         <span class="project-kicker">Verilog | Vivado | CDC</span>
-        <h2>Asynchronous FIFO</h2>
-        <p>16-bit wide, 32-deep async FIFO crossing 150 MHz write and 80 MHz read domains with Gray-coded synchronization.</p>
+        <h3>Asynchronous FIFO</h3>
+        <p>Implemented a 16-bit wide, 32-deep asynchronous FIFO based on Cummings' architecture.</p>
+        <ul>
+          <li>Crossed from a 150 MHz write domain to an 80 MHz read domain using Gray-coded pointer synchronization.</li>
+          <li>Verified full/empty flag generation and data integrity through functional simulation.</li>
+        </ul>
       </article>
+
       <article class="project-card">
-        <span class="project-kicker">AXI | DMA | FSM</span>
-        <h2>DMA Block with AXI Control</h2>
-        <p>DMA block with AXI register interface, FSM control, burst mode, directed testbenches, and PPA review.</p>
+        <span class="project-kicker">AXI | FSM | Vivado</span>
+        <h3>DMA Block with AXI Control</h3>
+        <p>Designed a DMA block with AXI register interface, FSM control, directed testbenches, and a custom burst mode.</p>
+        <ul>
+          <li>Covered AXI handshakes, state transitions, register access, and error-handling paths.</li>
+          <li>Reviewed timing, utilization, and power reports to tune PPA decisions.</li>
+        </ul>
       </article>
+
       <article class="project-card">
         <span class="project-kicker">Verilog | FPGA | DSP</span>
-        <h2>DSP Extensions and FPGA Bring-Up</h2>
-        <p>IEEE-754 floating-point datapath support and 20 custom vector instructions for an AI-accelerator DSP core.</p>
+        <h3>DSP Extensions &amp; FPGA Bring-Up</h3>
+        <p>Implemented IEEE-754 floating-point support and 20 custom vector instructions for an AI-accelerator DSP core.</p>
+        <ul>
+          <li>Prototyped on Intel PAC D5005 and worked across Intel Stratix-10 MX/NX targets.</li>
+          <li>Improved timing, datapath throughput, and regression automation with Tcl.</li>
+        </ul>
       </article>
+
       <article class="project-card">
         <span class="project-kicker">Verilog | CPU | Verification</span>
-        <h2>32-bit MIPS Processor</h2>
-        <p>Pipeline control, multi-cycle operations, coverage, synthesis, and debug methodology kept from the earlier portfolio draft.</p>
+        <h3>32-bit MIPS Processor</h3>
+        <p>Processor project covering pipeline control, multi-cycle operations, functional coverage, synthesis, and debug methodology.</p>
+        <ul>
+          <li>Implemented full 5-stage pipeline with hazard detection and forwarding.</li>
+          <li>Synthesized and verified correct instruction execution across test programs.</li>
+        </ul>
       </article>
     </div>
   </section>

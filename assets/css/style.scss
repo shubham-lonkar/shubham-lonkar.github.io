@@ -455,12 +455,58 @@ dl {
   font-size: 0.86rem;
 }
 
+.nav-active {
+  color: var(--accent) !important;
+}
+
 .page-title {
   padding-bottom: 32px;
 }
 
 .page-title h1 {
   font-size: clamp(2.6rem, 6vw, 5.6rem);
+}
+
+.home-nav-section {
+  background: var(--surface);
+}
+
+.home-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.home-nav-card {
+  display: block;
+  min-width: 0;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg);
+  box-shadow: 0 18px 48px var(--shadow);
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.home-nav-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 60%, var(--line));
+  transform: translateY(-2px);
+  color: var(--text);
+}
+
+.home-nav-card h2 {
+  margin: 8px 0 12px;
+  font-size: 1.6rem;
+  line-height: 1.1;
+}
+
+.home-nav-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 .project-shell {
@@ -478,7 +524,8 @@ dl {
 }
 
 @media (max-width: 1180px) {
-  .project-grid {
+  .project-grid,
+  .home-nav-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -517,7 +564,8 @@ dl {
   }
 
   .skill-columns,
-  .project-grid {
+  .project-grid,
+  .home-nav-grid {
     grid-template-columns: 1fr;
   }
 
