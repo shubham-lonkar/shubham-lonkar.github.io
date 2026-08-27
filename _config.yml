@@ -1,11 +1,13 @@
 title: "Shubham D. Lonkar"
-description: "RTL Design Engineer | CPU Microarchitecture | FPGA"
+description: "ASIC Design Engineer | RTL Design | Low-Power | Functional Verification"
 theme: jekyll-theme-slate
 show_downloads: false
 navigation:
-  - title: Projects
-    url: /#projects
   - title: Experience
     url: /#experience
   - title: Skills
     url: /#skills
+  - title: Projects
+    url: /#projects
+  - title: Research
+    url: /#research
