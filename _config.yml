@@ -1,13 +1,11 @@
-title: "Shubham Lonkar"
+title: "Shubham D. Lonkar"
 description: "RTL Design Engineer | CPU Microarchitecture | FPGA"
 theme: jekyll-theme-slate
 show_downloads: false
 navigation:
-  - title: Home
-    url: /
   - title: Projects
-    url: /projects/
+    url: /#projects
   - title: Experience
-    url: /experience/
+    url: /#experience
   - title: Skills
-    url: /skills/
+    url: /#skills
