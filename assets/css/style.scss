@@ -182,8 +182,10 @@ h2 {
 
 h3 {
   margin: 0 0 4px;
-  font-size: 1.02rem;
+  font-size: 1.2rem;
   font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
   color: var(--text-strong);
 }
 
@@ -299,8 +301,10 @@ strong {
 }
 
 .timeline-role {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
   color: var(--text-strong);
   margin: 0 0 8px;
 }
