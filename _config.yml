@@ -5,9 +5,9 @@ show_downloads: false
 navigation:
   - title: Experience
     url: /#experience
+  - title: Research
+    url: /#research
   - title: Skills
     url: /#skills
   - title: Projects
     url: /#projects
-  - title: Research
-    url: /#research

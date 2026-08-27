@@ -8,9 +8,9 @@ title: Shubham D. Lonkar
     <p class="site-name">Shubham D. Lonkar</p>
     <nav class="site-nav" aria-label="Primary">
       <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a href="#research">Research</a>
       <a href="mailto:slonkar@asu.edu" class="nav-contact">Contact</a>
     </nav>
   </header>
@@ -90,6 +90,28 @@ title: Shubham D. Lonkar
         </li>
       </ul>
     </div>
+  </section>
+
+  <hr class="divider">
+
+  <section class="site-section" id="research">
+    <div class="page-intro">
+      <h1>Research</h1>
+      <p>Graduate research at Arizona State University in CPU microarchitecture and cache compression.</p>
+    </div>
+
+    <ul class="timeline-list">
+      <li class="timeline-entry">
+        <p class="timeline-meta">Arizona State University · Tempe, AZ · Dec 2025–Jul 2026</p>
+        <p class="timeline-role">Dynamic Cache Compression: Revisiting Compression for Machine Learning Workloads</p>
+        <ul>
+          <li>Profiled ML workload memory-access behavior with Intel Pin traces and a Python cache simulator to characterize compressibility across benchmarks.</li>
+          <li>Designed per-line last-level-cache compression that raises the number of logical lines per physical cacheline by up to 47.3%, choosing among FPC, BDI, FVC, and ZCA per line at runtime.</li>
+          <li>Extended the software-validated policy into RTL compression logic integrated into a baseline RISC-V CPU.</li>
+        </ul>
+        <p class="timeline-link"><a href="https://www.proquest.com/docview/3371604147">Read the thesis &rarr;</a></p>
+      </li>
+    </ul>
   </section>
 
   <hr class="divider">
@@ -185,28 +207,6 @@ title: Shubham D. Lonkar
         <h2>32-bit MIPS Processor</h2>
         <p class="project-tools">Verilog · ModelSim · Synthesis</p>
         <p class="project-desc">Building a processor end to end means handling every pipeline corner. This 5-stage pipelined MIPS design covers pipeline control, hazard detection and forwarding, multi-cycle operations, functional coverage, and synthesis.</p>
-      </li>
-    </ul>
-  </section>
-
-  <hr class="divider">
-
-  <section class="site-section" id="research">
-    <div class="page-intro">
-      <h1>Research</h1>
-      <p>Graduate research at Arizona State University in CPU microarchitecture and cache compression.</p>
-    </div>
-
-    <ul class="timeline-list">
-      <li class="timeline-entry">
-        <p class="timeline-meta">Arizona State University · Tempe, AZ · Dec 2025–Jul 2026</p>
-        <p class="timeline-role">Dynamic Cache Compression: Revisiting Compression for Machine Learning Workloads</p>
-        <ul>
-          <li>Profiled ML workload memory-access behavior with Intel Pin traces and a Python cache simulator to characterize compressibility across benchmarks.</li>
-          <li>Designed per-line last-level-cache compression that raises the number of logical lines per physical cacheline by up to 47.3%, choosing among FPC, BDI, FVC, and ZCA per line at runtime.</li>
-          <li>Extended the software-validated policy into RTL compression logic integrated into a baseline RISC-V CPU.</li>
-        </ul>
-        <p class="timeline-link"><a href="https://www.proquest.com/docview/3371604147">Read the thesis &rarr;</a></p>
       </li>
     </ul>
   </section>
