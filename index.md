@@ -18,7 +18,7 @@ title: Shubham D. Lonkar
   <div class="page-layout">
     <main class="main-column">
       <section class="intro" id="about">
-        <p>I'm Shubham, an ASIC design engineer with 2+ years of industry experience in RTL design, low-power optimization, and functional verification. At Manjeera Digital Systems I owned an IEEE 754 floating-point unit for a DSP targeting NavIC satellites, raised SoC Fmax from 640 to 800 MHz, and cut dynamic power by 23% with targeted RTL clock gating. I'm now a graduate researcher at Arizona State University working on dynamic cache compression for machine-learning workloads.</p>
+        <p>I'm Shubham, an ASIC design engineer with 2+ years of experience in RTL design, low-power optimization, and functional verification. At Manjeera Digital Systems I raised SoC Fmax from 640 to 800 MHz and cut dynamic power by 23%. I'm now a graduate researcher at Arizona State University working on dynamic cache compression for machine-learning workloads.</p>
 
         <p>Open to full-time ASIC / RTL design and hardware microarchitecture roles — <a href="mailto:slonkar@asu.edu">slonkar@asu.edu</a> or <a href="https://www.linkedin.com/in/shubhamlonkar/">LinkedIn</a>.</p>
       </section>
@@ -196,7 +196,6 @@ title: Shubham D. Lonkar
       <hr class="divider sidebar-divider">
       <div class="page-intro">
         <h1>Skills</h1>
-        <p>HDLs, design and verification methodology, and the EDA toolchains used across industry and research.</p>
       </div>
 
       <ul class="skill-list">
@@ -225,6 +224,10 @@ title: Shubham D. Lonkar
   </div>
 </div>
 
+<button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to light mode" aria-pressed="false">
+  <span aria-hidden="true" id="themeToggleIcon">&#9728;</span>
+</button>
+
 <a href="#" class="to-top" id="toTop" aria-label="Back to top">&uarr;</a>
 
 <script>
@@ -239,6 +242,42 @@ title: Shubham D. Lonkar
     btn.addEventListener('click', function (e) {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  })();
+
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById('themeToggle');
+    var icon = document.getElementById('themeToggleIcon');
+    if (!btn) return;
+
+    var stored;
+    try {
+      stored = localStorage.getItem('theme');
+    } catch (e) {
+      stored = null;
+    }
+
+    var applyTheme = function (theme) {
+      if (theme === 'light') {
+        root.setAttribute('data-theme', 'light');
+      } else {
+        root.removeAttribute('data-theme');
+      }
+      btn.setAttribute('aria-pressed', theme === 'light' ? 'true' : 'false');
+      btn.setAttribute('aria-label', theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode');
+      icon.innerHTML = theme === 'light' ? '&#9790;' : '&#9728;';
+    };
+
+    applyTheme(stored === 'light' ? 'light' : 'dark');
+
+    btn.addEventListener('click', function () {
+      var current = root.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+      var next = current === 'light' ? 'dark' : 'light';
+      applyTheme(next);
+      try {
+        localStorage.setItem('theme', next);
+      } catch (e) {}
     });
   })();
 </script>
