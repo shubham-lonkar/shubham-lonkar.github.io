@@ -105,9 +105,10 @@ title: Shubham D. Lonkar
         <p class="timeline-meta">Arizona State University · Tempe, AZ · Dec 2025–Jul 2026</p>
         <p class="timeline-role">Dynamic Cache Compression: Revisiting Compression for Machine Learning Workloads</p>
         <ul>
-          <li>Profiled ML workload memory-access behavior with Intel Pin traces and a Python cache simulator to characterize compressibility across benchmarks.</li>
-          <li>Designed per-line last-level-cache compression that raises the number of logical lines per physical cacheline by up to 47.3%, choosing among FPC, BDI, FVC, and ZCA per line at runtime.</li>
-          <li>Extended the software-validated policy into RTL compression logic integrated into a baseline RISC-V CPU.</li>
+          <li>Designed a dynamic, per-line last-level-cache compression architecture: each 64-byte physical frame holds one uncompressed line or up to two 32-byte compressed lines, with every fill compressed in parallel by a portfolio of schemes (BDI, FPC, FVC, ZCA) and the best-fitting result kept, chosen from the line's content rather than runtime timing or hit/miss behavior.</li>
+          <li>Developed BDI+FVC, a hybrid scheme that rescues lines BDI would otherwise discard by encoding outlier words through a small, offline-profiled value table instead of leaving the whole line uncompressed.</li>
+          <li>Raised the effective number of logical lines per physical frame by 23.6-47.3% with no change to physical cache size, and reached 77.8-113.8% of the hit rate of a physically doubled cache while using half the area.</li>
+          <li>Synthesized a pruned three-scheme selector (FPC, FVC, BDI+FVC) for a Cyclone V FPGA, closing timing at 47.82 MHz at 41.52% ALM utilization, with the arbitration logic itself costing far less area than any individual compressor.</li>
         </ul>
         <p class="timeline-link"><a href="https://www.proquest.com/docview/3371604147">Read the thesis &rarr;</a></p>
       </li>
