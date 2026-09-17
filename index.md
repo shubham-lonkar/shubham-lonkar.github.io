@@ -11,7 +11,7 @@ title: Shubham D. Lonkar
       <a href="#research">Research</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a href="mailto:slonkar@asu.edu" class="nav-contact">Contact</a>
+      <a href="mailto:shubhamlonkar0912@gmail.com" class="nav-contact">Contact</a>
     </nav>
   </header>
 
@@ -20,7 +20,7 @@ title: Shubham D. Lonkar
       <section class="intro" id="about">
         <p>I'm Shubham, an ASIC design engineer with 2+ years of experience in RTL design, low-power optimization, and functional verification. At Manjeera Digital Systems I raised SoC Fmax from 640 to 800 MHz and cut dynamic power by 23%. I'm now a graduate researcher at Arizona State University working on dynamic cache compression for machine-learning workloads.</p>
 
-        <p>Open to full-time ASIC / RTL design and hardware microarchitecture roles — <a href="mailto:slonkar@asu.edu">slonkar@asu.edu</a> or <a href="https://www.linkedin.com/in/shubhamlonkar/">LinkedIn</a>.</p>
+        <p>Open to full-time ASIC / RTL design and hardware microarchitecture roles — <a href="mailto:shubhamlonkar0912@gmail.com">shubhamlonkar0912@gmail.com</a> or <a href="https://www.linkedin.com/in/shubhamlonkar/">LinkedIn</a>.</p>
       </section>
 
       <hr class="divider">
