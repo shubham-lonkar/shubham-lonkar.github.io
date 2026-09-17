@@ -90,41 +90,6 @@ h1, h2, h3, p, ul, dl, li {
   padding: clamp(48px, 8vw, 88px) clamp(20px, 5vw, 40px) clamp(80px, 12vw, 130px);
 }
 
-.page-layout {
-  display: block;
-}
-
-.main-column {
-  min-width: 0;
-}
-
-@media (min-width: 960px) {
-  .site-wrapper {
-    max-width: 1000px;
-  }
-
-  .page-layout {
-    display: flex;
-    align-items: flex-start;
-    gap: 64px;
-  }
-
-  .main-column {
-    flex: 1 1 680px;
-    max-width: 680px;
-  }
-
-  .skills-sidebar {
-    flex: 0 0 256px;
-    position: sticky;
-    top: clamp(24px, 4vw, 48px);
-  }
-
-  .skills-sidebar .sidebar-divider {
-    display: none;
-  }
-}
-
 /* ── Header ── */
 
 .site-header {
