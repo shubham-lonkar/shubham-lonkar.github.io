@@ -28,7 +28,6 @@ title: Shubham D. Lonkar
       <section class="site-section" id="experience">
         <div class="page-intro">
           <h1>Experience</h1>
-          <p>Industry roles in ASIC and FPGA design.</p>
         </div>
 
         <ul class="timeline-list">
@@ -62,7 +61,6 @@ title: Shubham D. Lonkar
       <section class="site-section" id="research">
         <div class="page-intro">
           <h1>Research</h1>
-          <p>Graduate research at Arizona State University in CPU microarchitecture and cache compression.</p>
         </div>
 
         <ul class="timeline-list">
@@ -85,7 +83,6 @@ title: Shubham D. Lonkar
       <section class="site-section" id="projects">
         <div class="page-intro">
           <h1>Projects</h1>
-          <p>RTL, microarchitecture, FPGA, and hardware security work from research, coursework, and industry.</p>
         </div>
 
         <ul class="project-list">
@@ -125,26 +122,6 @@ title: Shubham D. Lonkar
             <p class="project-desc">I reviewed Vivado synthesis, timing, and power reports to weigh PPA trade-offs before integrating the block into the lab prototype.</p>
             <p class="project-link"><a href="https://github.com/shubham-lonkar/rtl/tree/main/axi-dma">View code &rarr;</a></p>
           </li>
-
-          <li class="project-item">
-            <h2>DSP Floating-Point &amp; Vector Extensions</h2>
-            <p class="project-tools">Verilog · Quartus Prime · Intel Stratix-10 · Intel PAC D5005</p>
-            <p class="project-desc">Manjeera's DSP core for NavIC satellite signal processing needed more arithmetic accuracy than its integer datapath could provide. I added an IEEE 754 floating-point datapath and 20 vector instructions, then brought the design up on an Intel PAC D5005 across Stratix-10 MX/NX targets.</p>
-            <p class="project-desc">Tcl-driven regression flows cut simulation effort by roughly 80%.</p>
-          </li>
-
-          <li class="project-item">
-            <h2>Physical Unclonable Function Design</h2>
-            <p class="project-tools">Verilog · Quartus Prime · FPGA</p>
-            <p class="project-desc">A PUF is only useful if its responses are unique per chip and stable across runs. I built parameterized Arbiter and Ring Oscillator PUFs from delay-modeled RTL and evaluated them on FPGA hardware.</p>
-            <p class="project-desc">Hamming-distance analysis across harvested challenge-response pairs confirmed uniqueness and reliability, and Tcl-based LAB-cell placement constraints kept process variation from being masked by routing differences.</p>
-          </li>
-
-          <li class="project-item">
-            <h2>32-bit MIPS Processor</h2>
-            <p class="project-tools">Verilog · ModelSim · Synthesis</p>
-            <p class="project-desc">Building a processor end to end means handling every pipeline corner. This 5-stage pipelined MIPS design covers pipeline control, hazard detection and forwarding, multi-cycle operations, functional coverage, and synthesis.</p>
-          </li>
         </ul>
       </section>
 
@@ -153,7 +130,6 @@ title: Shubham D. Lonkar
       <section class="site-section" id="certifications">
         <div class="page-intro">
           <h1>Certifications</h1>
-          <p>Professional certifications in digital design and industrial automation.</p>
         </div>
 
         <ul class="info-list">
@@ -177,7 +153,6 @@ title: Shubham D. Lonkar
       <section class="site-section" id="education">
         <div class="page-intro">
           <h1>Education</h1>
-          <p>Formal training in electronics, telecommunications, and computer engineering.</p>
         </div>
 
         <ul class="info-list">
