@@ -18,9 +18,9 @@ title: Shubham D. Lonkar
   <div class="page-layout">
     <main class="main-column">
       <section class="intro" id="about">
-        <p>I'm Shubham, an ASIC design engineer with 2+ years of experience in RTL design, low-power optimization, and functional verification. At Manjeera Digital Systems I raised SoC Fmax from 640 to 800 MHz and cut dynamic power by 23%. I'm now a graduate researcher at Arizona State University working on dynamic cache compression for machine-learning workloads.</p>
+        <p>I'm Shubham, an ASIC design engineer with 2+ years of experience in RTL design, low-power optimization, &amp; functional verification. At Manjeera Digital Systems I raised SoC Fmax from 640 to 800 MHz &amp; cut dynamic power by 23%. I'm now a graduate researcher at Arizona State University working on dynamic cache compression for machine-learning workloads.</p>
 
-        <p>Open to full-time ASIC / RTL design and hardware microarchitecture roles — <a href="mailto:shubhamlonkar0912@gmail.com">shubhamlonkar0912@gmail.com</a> or <a href="https://www.linkedin.com/in/shubhamlonkar/">LinkedIn</a>.</p>
+        <p>Open to full-time ASIC / RTL design &amp; microarchitecture engineer roles — <a href="mailto:shubhamlonkar0912@gmail.com">shubhamlonkar0912@gmail.com</a> or <a href="https://www.linkedin.com/in/shubhamlonkar/">LinkedIn</a>.</p>
       </section>
 
       <hr class="divider">
@@ -35,12 +35,8 @@ title: Shubham D. Lonkar
             <p class="timeline-meta">Manjeera Digital Systems · Hyderabad, India · Oct 2022–Mar 2024</p>
             <p class="timeline-role">ASIC Design Engineer</p>
             <ul>
-              <li>Owned an IEEE 754 floating-point unit and added 20 vector instructions for a DSP targeting NavIC satellites.</li>
-              <li>Raised SoC Fmax by 25%, from 640 MHz to 800 MHz, by rebalancing logic depth and removing critical-path bottlenecks.</li>
-              <li>Reduced dynamic power by 23% via targeted RTL clock gating, validated against a pre-gating baseline with Power Analyzer.</li>
-              <li>Authored block-level microarchitecture documentation for the FP datapath and new vector instructions.</li>
-              <li>Resolved CDC hazards across a 3-clock-domain SoC subsystem using synchronizers, handshake protocols, and FIFOs.</li>
-              <li>Debugged RTL failures across datapath, control, and integration paths using simulation traces and waveform analysis.</li>
+              <li>Owned an IEEE 754 floating-point unit &amp; added 20 vector instructions for a DSP targeting NavIC satellites.</li>
+              <li>Raised SoC Fmax by 25% (640 to 800 MHz) &amp; cut dynamic power by 23%.</li>
             </ul>
           </li>
 
@@ -48,9 +44,8 @@ title: Shubham D. Lonkar
             <p class="timeline-meta">OneRupeeST · Pune, India · Jan 2022–Oct 2022</p>
             <p class="timeline-role">FPGA Design Intern</p>
             <ul>
-              <li>Designed a DMA block with AXI interface and FSM control; added a burst-transfer mode and integrated it into the lab prototype.</li>
-              <li>Built directed testbenches and validated the DMA design through waveform debug.</li>
-              <li>Reviewed Vivado synthesis, timing, and power reports to evaluate PPA and FPGA implementation trade-offs.</li>
+              <li>Designed a DMA block with AXI interface, FSM control, &amp; a custom burst-transfer mode integrated into the lab prototype.</li>
+              <li>Built directed testbenches &amp; reviewed Vivado synthesis, timing, &amp; power reports to evaluate PPA trade-offs.</li>
             </ul>
           </li>
         </ul>
@@ -68,9 +63,9 @@ title: Shubham D. Lonkar
             <p class="timeline-meta">Arizona State University · Tempe, AZ · Dec 2025–Jul 2026</p>
             <p class="timeline-role">Dynamic Cache Compression: Revisiting Compression for Machine Learning Workloads</p>
             <ul>
-              <li>Designed a dynamic, per-line last-level-cache compression architecture: each 64-byte physical frame holds one uncompressed line or up to two 32-byte compressed lines, with every fill compressed in parallel by a portfolio of schemes (BDI, FPC, FVC, ZCA) and the best-fitting result kept, chosen from the line's content rather than runtime timing or hit/miss behavior.</li>
+              <li>Designed a dynamic, per-line last-level-cache compression architecture: each 64-byte physical frame holds one uncompressed line or up to two 32-byte compressed lines, with every fill compressed in parallel by a portfolio of schemes (BDI, FPC, FVC, ZCA) &amp; the best-fitting result kept, chosen from the line's content rather than runtime timing or hit/miss behavior.</li>
               <li>Developed BDI+FVC, a hybrid scheme that rescues lines BDI would otherwise discard by encoding outlier words through a small, offline-profiled value table instead of leaving the whole line uncompressed.</li>
-              <li>Raised the effective number of logical lines per physical frame by 23.6-47.3% with no change to physical cache size, and reached 77.8-113.8% of the hit rate of a physically doubled cache while using half the area.</li>
+              <li>Raised the effective number of logical lines per physical frame by 23.6-47.3% with no change to physical cache size, &amp; reached 77.8-113.8% of the hit rate of a physically doubled cache while using half the area.</li>
               <li>Synthesized a pruned three-scheme selector (FPC, FVC, BDI+FVC) for a Cyclone V FPGA, closing timing at 47.82 MHz at 41.52% ALM utilization, with the arbitration logic itself costing far less area than any individual compressor.</li>
             </ul>
             <p class="timeline-link"><a href="https://www.proquest.com/docview/3371604147">Read the thesis &rarr;</a></p>
@@ -89,37 +84,33 @@ title: Shubham D. Lonkar
           <li class="project-item">
             <h2>Branch Prediction &amp; RISC-V CPU</h2>
             <p class="project-tools">Verilog · RV32I · Intel Quartus · ModelSim</p>
-            <p class="project-desc">A branch-not-taken CPU flushes the pipeline every time a branch is actually taken. I built a 5-stage RV32I CPU with stall/flush, hazard detection, and full forwarding, then added GShare and GSelect predictors with misprediction recovery.</p>
-            <p class="project-desc">Across multiple validated benchmarks the predictors averaged a 17% CPI reduction over the branch-not-taken baseline.</p>
+            <p class="project-desc">Built a 5-stage RV32I CPU with hazard detection &amp; full forwarding, then added GShare &amp; GSelect branch predictors with misprediction recovery — a 17% average CPI reduction over the branch-not-taken baseline.</p>
             <p class="project-link"><a href="https://github.com/shubham-lonkar/rtl/tree/main/riscv-cpu">View code &rarr;</a></p>
           </li>
 
           <li class="project-item">
             <h2>FP8 Systolic Matrix Multiplier</h2>
             <p class="project-tools">SystemVerilog · FP8 · APB · Synopsys Design Compiler · 45 nm</p>
-            <p class="project-desc">Integer MACs spend power on precision that ML inference doesn't need. I designed custom FP8 E3M4 datapaths in a 4×4 systolic array with an APB CSR interface for control and status.</p>
-            <p class="project-desc">The design meets 500 MHz on a 45 nm standard-cell library and cuts power by 55% against the integer baseline. Directed testbenches verified arithmetic correctness across NaN, overflow, and denormal special cases.</p>
+            <p class="project-desc">Designed custom FP8 E3M4 datapaths in a 4×4 systolic array with an APB CSR interface; meets 500 MHz on a 45 nm standard-cell library &amp; cuts power by 55% against the integer baseline.</p>
             <p class="project-link"><a href="https://github.com/shubham-lonkar/rtl/tree/main/systolic-matmul">View code &rarr;</a></p>
           </li>
 
           <li class="project-item">
             <h2>Hardware Trojan Detection &amp; Implementation</h2>
             <p class="project-tools">Verilog · ModelSim · Yosys · Quartus Prime</p>
-            <p class="project-desc">Four obfuscated memory-mapped UART netlists arrived with no documentation. I detected the Trojans through simulation, waveform debug, and Yosys netlist visualization, identifying each trigger condition and payload.</p>
-            <p class="project-desc">I then inserted a register-file leakage Trojan with an always-on trigger into an RV64IM processor's RTL and measured its area and timing overhead.</p>
+            <p class="project-desc">Detected Trojans in four obfuscated UART netlists via simulation &amp; Yosys netlist visualization, then inserted a register-file leakage Trojan into an RV64IM processor's RTL &amp; measured its area/timing overhead.</p>
           </li>
 
           <li class="project-item">
             <h2>Asynchronous FIFO</h2>
             <p class="project-tools">Verilog · Vivado · CDC</p>
-            <p class="project-desc">Passing data from a 150 MHz write domain to an 80 MHz read domain needs a safe clock-domain crossing. I designed and verified a 16-bit-wide, 32-deep asynchronous FIFO using Gray-coded pointer synchronization, full/empty flag logic, and directed simulation tests.</p>
+            <p class="project-desc">Designed &amp; verified a 16-bit-wide, 32-deep asynchronous FIFO using Gray-coded pointer synchronization for safe clock-domain crossing between a 150 MHz write domain &amp; an 80 MHz read domain.</p>
           </li>
 
           <li class="project-item">
             <h2>DMA Block with AXI Control</h2>
             <p class="project-tools">Verilog · Vivado · AXI · FSM</p>
-            <p class="project-desc">Moving data between hardware and software without tying up the CPU calls for a DMA engine. I designed one with an AXI register interface and FSM control, added a custom burst-transfer mode, and built directed testbenches for AXI handshakes, state transitions, and error paths.</p>
-            <p class="project-desc">I reviewed Vivado synthesis, timing, and power reports to weigh PPA trade-offs before integrating the block into the lab prototype.</p>
+            <p class="project-desc">Designed a DMA engine with an AXI register interface, FSM control, &amp; a custom burst-transfer mode; verified it with directed testbenches &amp; reviewed Vivado synthesis, timing, &amp; power reports for PPA trade-offs.</p>
             <p class="project-link"><a href="https://github.com/shubham-lonkar/rtl/tree/main/axi-dma">View code &rarr;</a></p>
           </li>
         </ul>
@@ -159,12 +150,12 @@ title: Shubham D. Lonkar
           <li class="info-entry">
             <h3>Arizona State University</h3>
             <p>MS, Computer Engineering (Electrical Engineering) · Aug 2024–Jul 2026</p>
-            <p>Computer Architecture, Advanced Digital Design and Verification, Algorithm/Hardware Co-design, Design Automation for AI Hardware.</p>
+            <p>Computer Architecture, Advanced Digital Design &amp; Verification, Algorithm/Hardware Co-design, Design Automation for AI Hardware.</p>
           </li>
           <li class="info-entry">
             <h3>Bharati Vidyapeeth University, Pune</h3>
             <p>BTech, Electronics &amp; Telecommunication Engineering · Jun 2018–Aug 2022</p>
-            <p>Microprocessors and Microcontrollers, VLSI Design, Digital Circuits.</p>
+            <p>Microprocessors &amp; Microcontrollers, VLSI Design, Digital Circuits.</p>
           </li>
         </ul>
       </section>
@@ -178,8 +169,8 @@ title: Shubham D. Lonkar
 
       <ul class="skill-list">
         <li class="skill-entry">
-          <h3>HDL &amp; Programming</h3>
-          <p>Verilog, SystemVerilog, C++, Python.</p>
+          <h3>HDL, Programming &amp; Scripting</h3>
+          <p>Verilog, SystemVerilog, C++, Python, Tcl.</p>
         </li>
         <li class="skill-entry">
           <h3>RTL Design &amp; Optimization</h3>
@@ -187,7 +178,7 @@ title: Shubham D. Lonkar
         </li>
         <li class="skill-entry">
           <h3>Verification &amp; Debug</h3>
-          <p>Block-level verification, directed and self-checking testbenches, SystemVerilog Assertions, waveform debug.</p>
+          <p>Block-level verification, directed &amp; self-checking testbenches, SystemVerilog Assertions, waveform debug.</p>
         </li>
         <li class="skill-entry">
           <h3>Tools</h3>

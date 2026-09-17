@@ -454,16 +454,10 @@ strong {
 /* ── Page title (inner pages) ── */
 
 .page-intro {
-  margin-bottom: clamp(32px, 5vw, 52px);
+  margin-bottom: 20px;
 }
 
 .page-intro h1 {
-  margin-bottom: 12px;
-}
-
-.page-intro p {
-  font-size: 1rem;
-  color: var(--text-muted);
   margin-bottom: 0;
 }
 
