@@ -94,6 +94,7 @@ title: Shubham D. Lonkar
             <p class="project-tools">Verilog · RV32I · Intel Quartus · ModelSim</p>
             <p class="project-desc">A branch-not-taken CPU flushes the pipeline every time a branch is actually taken. I built a 5-stage RV32I CPU with stall/flush, hazard detection, and full forwarding, then added GShare and GSelect predictors with misprediction recovery.</p>
             <p class="project-desc">Across multiple validated benchmarks the predictors averaged a 17% CPI reduction over the branch-not-taken baseline.</p>
+            <p class="project-link"><a href="https://github.com/shubham-lonkar/rtl/tree/main/riscv-cpu">View code &rarr;</a></p>
           </li>
 
           <li class="project-item">
@@ -101,6 +102,7 @@ title: Shubham D. Lonkar
             <p class="project-tools">SystemVerilog · FP8 · APB · Synopsys Design Compiler · 45 nm</p>
             <p class="project-desc">Integer MACs spend power on precision that ML inference doesn't need. I designed custom FP8 E3M4 datapaths in a 4×4 systolic array with an APB CSR interface for control and status.</p>
             <p class="project-desc">The design meets 500 MHz on a 45 nm standard-cell library and cuts power by 55% against the integer baseline. Directed testbenches verified arithmetic correctness across NaN, overflow, and denormal special cases.</p>
+            <p class="project-link"><a href="https://github.com/shubham-lonkar/rtl/tree/main/systolic-matmul">View code &rarr;</a></p>
           </li>
 
           <li class="project-item">
@@ -121,6 +123,7 @@ title: Shubham D. Lonkar
             <p class="project-tools">Verilog · Vivado · AXI · FSM</p>
             <p class="project-desc">Moving data between hardware and software without tying up the CPU calls for a DMA engine. I designed one with an AXI register interface and FSM control, added a custom burst-transfer mode, and built directed testbenches for AXI handshakes, state transitions, and error paths.</p>
             <p class="project-desc">I reviewed Vivado synthesis, timing, and power reports to weigh PPA trade-offs before integrating the block into the lab prototype.</p>
+            <p class="project-link"><a href="https://github.com/shubham-lonkar/rtl/tree/main/axi-dma">View code &rarr;</a></p>
           </li>
 
           <li class="project-item">
